@@ -1,0 +1,47 @@
+.memes {
+    padding: 70px 0px;
+    position: relative;
+
+    h2 {
+        font-size: 95px;
+        font-weight: 700;
+        line-height: 120%;
+        line-height: 120%;
+        color: $smoke;
+        font-size: 95px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__container {
+        position: relative;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        z-index: 10;
+        img {
+            cursor: pointer;
+            transition: scale .1s ease-in-out;
+            &:hover {
+                scale: 1.02;
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        img {
+            position: relative;
+            top: 100px;
+            left: 50%;
+            translate: -50% 0;
+        }
+    }
+}

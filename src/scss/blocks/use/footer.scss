@@ -1,0 +1,71 @@
+.footer {
+
+    max-height: 380px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        align-items: flex-end;
+        height: 100%;
+        padding: 0px 88px;
+        padding-bottom: 50px;
+    }
+
+    &__btn {
+        margin-left: auto;
+
+        button {
+            width: 413px;
+            height: 110px;
+            font-size: 50.67px;
+            transform: rotate(-6.00deg);
+        }
+    }
+
+    &__img {
+        bottom: -100px;
+        position: absolute;
+        width: 346px;
+        height: 483px;
+        // translate: 0 100px;
+        transform: rotate(-5.00deg);
+    }
+
+    &__btns {
+        margin-top: 32px;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__links {
+        max-width: 405px;
+        width: 100%;
+
+        p {
+            font-size: 33px;
+            font-weight: 600;
+            line-height: 120%;
+            letter-spacing: -1%;
+            text-align: center;
+            color: rgb(113, 101, 193);
+        }
+
+        a {
+            svg {
+                fill: $yellow;
+                transition: .1s ease-in;
+
+                &:hover {
+                    fill: $red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes scroll3 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes scroll4 {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.banner {
+    position: relative;
+    z-index: 10;
+
+    background-color: $dark;
+    height: 90px;
+    padding: 10px 0px;
+
+    .banner__wrapper {
+        display: flex;
+        height: 100%;
+        border-top: 3px solid #302868;
+        border-bottom: 3px solid #302868;
+        overflow: hidden;
+    }
+
+    .banner-content:nth-child(1) {
+        animation: scroll var(--time) linear infinite;
+        animation-delay: calc(var(--time)*-1);
+    }
+
+    .banner-content:nth-child(2) {
+        animation: scroll2 var(--time) linear infinite;
+        animation-delay: calc(var(--time)/-2);
+    }
+
+    .banner-content {
+        white-space: nowrap;
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(218, 213, 255);
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        span {
+            display: inline-flex;
+            text-align: center;
+            margin: 0 50px;
+        }
+    }
+}
+
+.reverse {
+    .banner-content:nth-child(1) {
+        animation: scroll3 var(--time) linear infinite;
+        animation-delay: calc(var(--time)*-1);
+    }
+
+    .banner-content:nth-child(2) {
+        animation: scroll4 var(--time) linear infinite;
+        animation-delay: calc(var(--time)/-2);
+    }
+}

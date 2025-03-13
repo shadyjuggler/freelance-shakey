@@ -1,0 +1,311 @@
+@media (max-width: 1399px) {
+    .hero {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .hero__content {
+            .hero__img {
+                display: none;
+            }
+        }
+    }
+
+    .about {
+        .about__content {
+            justify-content: center;
+
+            .about__img {
+                width: 20%;
+                position: absolute;
+                z-index: 5;
+
+                top: 20px;
+                right: 100px;
+            }
+
+            .about__descr {
+                z-index: 10;
+            }
+        }
+
+    }
+
+    .tokenomics {
+        .tokenomics__content {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .container {
+        .road {
+            h2 {
+                font-size: 140px;
+            }
+        }
+
+        .road__content {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .road__item {
+                // width: 50%;
+                max-width: 100%;
+                flex-basis: 50%;
+            }
+        }
+
+        .road__bg {
+            .circle:nth-child(1) {
+                left: -50%;
+            }
+
+            .circle:nth-child(2) {
+                top: 60%;
+                right: -50%;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 100px;
+
+        .container {
+            padding: 0 !important;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 10px !important;
+        }
+
+        .footer__btn {
+            z-index: 2;
+            margin: 0;
+            flex-basis: 50%;
+        }
+
+        .footer__img {
+            display: none;
+        }
+
+        .footer__links {
+            z-index: 2;
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        button.shakey {
+            font-size: 20px !important;
+            box-shadow: 0px 5px 0px 0px #730E29, 0px 10px 0px 0px #121137 !important;
+        }
+
+        .banner {
+            height: 70px !important;
+
+            .banner-content {
+                font-size: 20px !important;
+
+                p {
+                    min-width: 180px !important;
+                }
+            }
+        }
+
+        .navbar {
+            overflow: scroll;
+            padding: 0px 20px;
+            justify-content: flex-start !important;
+
+            .navbar__link {
+                // display: none;
+            }
+        }
+
+        .hero {
+            .hero__imgs {
+                #title {
+                    width: 100%;
+                    min-width: 320px;
+                }
+                #powered {
+                    font-size: 28px;
+                }
+            }
+
+            .hero__content {
+                padding: 0 0px;
+            }
+
+            .hero__description {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+
+            .hero__btns {
+                margin-top: 30px;
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+
+                .imgs {
+                    translate: 0 0;
+                }
+                img {
+                    
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+            }
+
+            .hero__rings {
+                .ring {
+                    translate: -50% 70%;
+                }
+            }
+        }
+
+        .about {
+            .container {
+                h2 {
+                    font-size: 50px;
+                }
+
+                .about__img {
+                    right: 5px;
+                }
+
+                .about__p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .tokenomics {
+            padding: 80px 0px;
+            .tokenomics__header {
+                font-size: 50px;
+            }
+            .tokenomics__number {
+                margin-top: 30px;
+                font-size: 24px;
+            }
+            .tokenomics__sub {
+                font-size: 58px;
+            }
+            ul {
+                li {
+                    font-size: 24px;
+                }
+            }
+            .tokenomics__diag {
+                padding: 0px;
+                border-radius: 30px;
+            }
+            .tokenomics__imgs {
+                display: flex;
+                justify-content: center;
+            }
+            #ring {
+                width: 90%;
+                // margin: 0 auto;
+            }
+            #robot {
+                width: 75%;
+            }
+            .tokenomics__comm, .tokenomics__team {
+                margin-top: 10px;
+                font-size: 24px;
+                gap: 10px;
+                line-height: 36px!important;
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+        .address {
+            font-size: 18px;
+            overflow-x: scroll;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 15px 10px;
+        }
+        .memes {
+            h2 {
+                font-size: 50px;
+            }
+            .memes__container {
+                margin-top: 20px;
+            }
+        }
+        .road {
+            h2 {
+                font-size: 100px!important;
+                translate: 0 50px;
+            }
+            .road__text {
+                font-size: 18px;
+                max-width: 100%;
+            }
+            .road__content {
+                gap: 20px;
+                .road__item {
+                    flex-basis: 100%;
+                }
+            }
+        }
+        .footer {
+            margin-top: 50px;
+            height: auto;
+            padding: 20px 0px;
+            button.shakey {
+                width: 250px;
+                height: 70px;
+            }
+            .footer__links {
+                margin-top: 30px;
+                max-width: 100%!important;
+                flex-basis: 100%;
+                p {
+                    font-size: 24px;
+                }
+            }
+            .footer__img {
+                display: none;
+            }
+            .footer__btn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    #powered {
+        font-size: 24px!important;
+    }
+}
+
+@media (max-width: 475px) {
+    #powered {
+        font-size: 20px!important;
+    }
+}
+
+@media (max-width: 420px) {
+    #powered {
+        font-size: 18px!important;
+    }
+}
+@media (max-width: 375px) {
+    #powered {
+        font-size: 16px!important;
+    }
+}

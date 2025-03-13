@@ -1,0 +1,31 @@
+.address {
+    background-color: #5031D3;
+    color: #E6E6F4;
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    a {
+        position: relative;
+        color: #E6E6F4;
+        font-weight: 700;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            display: block;
+            left: 50%;
+            translate: -50% 0;
+            height: 2px;
+            background-color: $smoke;
+            width: 0%;
+            transition: width .1s ease-in-out;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
